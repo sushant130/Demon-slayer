@@ -1,0 +1,44 @@
+body {
+  overflow: hidden;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  max-width: 700px;
+  width: 200px;
+  z-index: 1;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+}
+
+summary {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,56 @@
+body {
+  overflow: hidden;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  background: rgba(41, 39, 39, 0.465);
+  text-align: center;
+  color: white;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, 40%);
+  height: 60vh;
+  overflow-y: scroll;
+  max-width: 700px;
+  z-index: 1;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 350%);
+  font-size: 36px;
+  color: white;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.video-container {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

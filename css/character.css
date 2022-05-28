@@ -1,0 +1,62 @@
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 70vh;
+  padding-top: 150px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  margin: 0px 20px;
+}
+
+.card {
+  background-color: rgba(8, 8, 8, 0.238);
+  color: black;
+  border-radius: 10px;
+  border: #ff5733 2px solid;
+  padding: 10px 15px;
+  margin: 10px;
+  min-width: 400px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: transform ease-in-out 0.4s;
+}
+
+.card-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.card-text span {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.card-text p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.video-container {
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
